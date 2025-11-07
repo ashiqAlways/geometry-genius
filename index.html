@@ -27,14 +27,16 @@
             <div class="card-body">
               <h2 class="card-title">Triangle</h2>
               <p class="text-center text-2xl">Area (A) = 0.5 x b x h</p>
-              <div >
-                <input id="triangle-base"
+              <div>
+                <input
+                  id="triangle-base"
                   class="w-24 text-2xl p-2 rounded-sm"
                   type="text"
                   placeholder="b"
                 />
                 <span class="mr-4 ml-2">cm</span>
-                <input id="triangle-height"
+                <input
+                  id="triangle-height"
                   class="w-24 text-2xl p-2 rounded-sm"
                   type="text"
                   placeholder="h"
@@ -42,29 +44,60 @@
                 <span class="mr-4 ml-2">cm</span>
               </div>
               <div>
-                <p class="text-2xl">Area: <span id="triangle-area"></span> <span>cm<sup>2</sup></span></p>
+                <p class="text-2xl">
+                  Area: <span id="triangle-area">0</span>
+                  <span>cm<sup>2</sup></span>
+                </p>
               </div>
               <div class="card-actions justify-end">
-                <button onclick="calculateTriangleAria()" class="btn btn-primary w-full">Calculate</button>
+                <button
+                  onclick="calculateTriangleAria()"
+                  class="btn btn-primary w-full"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
           <!-- Rectangle Card -->
           <div class="card bg-base-100 w-96 shadow-sm">
             <figure>
-              <img
-                src="images/rectangle.png"
-                alt="Shoes"
-              />
+              <img src="images/rectangle.png" alt="Shoes" />
             </figure>
             <div class="card-body">
               <h2 class="card-title">Rectangle</h2>
-              <p>
-                A card component has a figure, a body part, and inside body
-                there are title and actions parts
-              </p>
+              <p class="text-center text-2xl">Area (A) = w X I</p>
+              <div class="flex">
+                <input
+                  type="text"
+                  name=""
+                  id="rectangle-length"
+                  class="w-24 text-2xl p-2 rounded-sm"
+                  placeholder="l"
+                />
+                <span class="mr-4 ml-2">cm</span>
+                <input
+                  type="text"
+                  name=""
+                  id="rectangle-width"
+                  class="w-24 text-2xl p-2 rounded-sm"
+                  placeholder="w"
+                />
+                <span class="mr-4 ml-2">cm</span>
+              </div>
+              <div>
+                <p class="text-2xl">
+                  Area: <span id="rectangle-area">0</span> <span>cm</span>
+                  <sup>2</sup>
+                </p>
+              </div>
               <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
+                <button
+                  onclick="calculateRectangleArea()"
+                  class="btn btn-primary w-full"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
@@ -115,5 +148,6 @@
     </main>
 
     <script src="scripts/triangle-calculate.js"></script>
+    <script src="scripts/rectangle-area.js"></script>
   </body>
 </html>
