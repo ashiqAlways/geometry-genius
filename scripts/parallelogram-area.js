@@ -1,26 +1,6 @@
-// function calculateParallelogramArea(){
-//     // const baseInput = document.getElementById('parallelogram-base');
-//     // const baseText = baseInput.value;
-//     // const base = parseFloat(baseText);
-//     // console.log(base);
-
-//     const base = getPatallelogramBase();
-//     console.log(base);
-// }
-
-
-// function getPatallelogramBase(){
-//     const baseInput = document.getElementById('parallelogram-base');
-//     const baseText = baseInput.value;
-//     const base = parseFloat(baseText);
-//     return base;
-// }
-
-
 // Here the function has been called
 
 function calculateParallelogramArea() {
-
   const base = getInputValueById("parallelogram-base");
 //   console.log('base value', base);
 
@@ -42,7 +22,6 @@ function getInputValueById(inputFieldId) {
 //   console.log(inputValue);
   return inputValue;
 }
-
 
 function setInnerTextById(elementId, area){
     const element = document.getElementById(elementId);
